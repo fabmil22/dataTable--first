@@ -4,15 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DatatableComponent } from './datatable/datatable.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgxDatatableModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
